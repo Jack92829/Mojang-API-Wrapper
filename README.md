@@ -6,9 +6,11 @@
 # Examples
 ### Accessing a players skin
 ```python
-import ...
+from MojangAPI import Client
+import asyncio
+
 async def main():
-    user = await User.createUser('Minecraft playername')
+    user = await Client.User.createUser('Minecraft playername')
     profile = await user.getProfile()
     print(profile.skin) # Will print the skins URL
 
@@ -23,9 +25,11 @@ loop.run_until_complete(main())
 Please note that Mojang's API may not trust your IP. To check if this is the case run the following code:
 
 ```python
-import ...
+from MojangAPI import Client
+import asyncio
+
 async def main():
-    user = await User.createUser('Minecraft playername')
+    user = await Client.User.createUser('Minecraft playername')
     await user.authenticate('Mojang Email', 'Mojang password')
     await user.checkForSecurityQuestions() 
     # Will raise an error if untrusted
@@ -36,9 +40,11 @@ If your IP is untrusted you can complete security challenges to become trusted (
 </details>
 
 ```python
-import ...
+from MojangAPI import Client
+import asyncio
+
 async def main():
-    user = await User.createUser('Minecraft playername')
+    user = await Client.User.createUser('Minecraft playername')
     await user.authenticate('Mojang Email', 'Mojang password')
     await user.changeSkin('Skin url', slim_model = True)
 
@@ -48,12 +54,14 @@ loop.run_until_complete(main())
 
 ### Getting sales data
 ```python
-import ...
+from MojangAPI import DataService
+import asyncio
+
 async def main():
-    data = await DataService.getStatistics(prepaid_card_redeemed_minecraft=True)
+    data = await DataService.Data.getStatistics(prepaid_card_redeemed_minecraft=True)
     # Valid keyword arguments can be found at https://wiki.vg/Mojang_API#Payload_4
     print(data)
-
+    
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
