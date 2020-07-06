@@ -3,7 +3,7 @@
 * Pythonic wrapper making use of `await` and `asnyc`
 * 100% Coverage of Mojang's API and Authentication API
 
-## Examples
+# Examples
 ### Accessing a players skin
 ```python
 import ...
