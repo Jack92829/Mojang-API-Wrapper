@@ -53,4 +53,7 @@ async def main():
     data = await DataService.getStatistics(prepaid_card_redeemed_minecraft=True)
     # Valid keyword arguments can be found at https://wiki.vg/Mojang_API#Payload_4
     print(data)
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
 ```
