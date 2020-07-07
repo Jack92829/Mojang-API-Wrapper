@@ -41,7 +41,10 @@ async def main():
     user = await Client.User.createUser('Minecraft playername')
     await user.authenticate('Mojang Email', 'Mojang password')
     await user.checkForSecurityQuestions() 
-    # Will raise an error if untrusted
+    # Will return True if the IP is untrusted else False
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
 ```
 
 If your IP is untrusted you can complete security challenges to become trusted (I believe you only need to do this once). To get the security questions your Mojang account will need them active (refer to https://help.minecraft.net/hc/en-us/articles/360034686852-Resetting-Security-Questions). After which run `questions = await user.getSecurityQuestions()` to get the questions, and then `await user.sendSecurityAnswers(answers)` with the answers in the form refered to in the API's documentation (https://wiki.vg/Mojang_API#Send_back_the_answers).
