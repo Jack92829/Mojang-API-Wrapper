@@ -1,4 +1,4 @@
-from .Errors import handle
+from .Errors import Unauthenticated
 from .Tokens import generateClientToken
 from .Request import Request
 from .Endpoints import *
