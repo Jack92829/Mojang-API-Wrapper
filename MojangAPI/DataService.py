@@ -1,4 +1,4 @@
-from .Request import get, post
+from .Request import Request
 from .Endpoints import *
 
 
