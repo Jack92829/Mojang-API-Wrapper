@@ -41,6 +41,13 @@
         </p>
     </p>
     <p>
+        &ensp;&ensp;&ensp;**`await createUser(minecraftUsername, time=None)`**
+        <p>
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;This class method is a *[coroutine](https://docs.python.org/3/library/asyncio-task.html#coroutine "a coroutine")*.  
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Returns a new User object holding the users *minecraftUsername*, *uuid* and *clientToken*
+        </p>
+    </p>
+    <p>
         &ensp;&ensp;&ensp;**`await getUUID(username, time=None)`**
         <p>
             &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;This function is a *[coroutine](https://docs.python.org/3/library/asyncio-task.html#coroutine "a coroutine")*.  
