@@ -31,3 +31,7 @@ class Data:
     async def checkServerStatus(cls) -> list:
         """Returns a list of dictionaries containing the status of various Mojang services"""
         return await Request.get(StatusServerEndpoints.CHECK_STATUS)
+    
+    @classmethod
+    async def getProfiles(cls, *usernames):
+        return await Request.post(APIserverEndpoints.PLAYERS, usernames, headers={'content-type': 'application/json'})
