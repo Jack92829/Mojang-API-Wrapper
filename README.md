@@ -3,6 +3,15 @@
 * Pythonic wrapper making use of `await` and `asnyc`
 * 100% Coverage of Mojang's API and Authentication API
 
+## Installation
+To install simply run the following:
+```
+# Linux/macOS
+python3 -m pip install -U MojangAPI
+
+# Windows
+py -3 -m pip install -U MojangAPI
+```
 # Examples
 ### Accessing a players skin
 ```python
