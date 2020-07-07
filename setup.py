@@ -19,6 +19,7 @@ setuptools.setup(
     ],
     python_requires='>=3.7',
     project_urls={
-        "Issue tracker": "https://github.com/Jack92829/Mojang-API-Wrapper/issues"
+        "Issue tracker": "https://github.com/Jack92829/Mojang-API-Wrapper/issues",
+        "Documentation": "https://github.com/Jack92829/Mojang-API-Wrapper/blob/master/Docs.md"
     }
-)   
+) 
