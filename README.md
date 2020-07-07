@@ -40,7 +40,7 @@ import asyncio
 async def main():
     user = await Client.User.createUser('Minecraft playername')
     await user.authenticate('Mojang Email', 'Mojang password')
-    await user.checkForSecurityQuestions() 
+    check = await user.checkForSecurityQuestions() 
     # Will return True if the IP is untrusted else False
 
 loop = asyncio.get_event_loop()
