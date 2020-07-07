@@ -1,7 +1,6 @@
 import aiohttp
 import asyncio
-from .Errors import *
-
+from .Errors import handle
 
 class Request:
     async def get(url, headers=None):
