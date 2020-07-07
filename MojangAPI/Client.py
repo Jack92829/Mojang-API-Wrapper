@@ -1,6 +1,6 @@
 from .Errors import handle
 from .Tokens import generateClientToken
-from .Request import *
+from .Request import get, post, put, delete
 from .Endpoints import *
 import json
 import base64 as b64
