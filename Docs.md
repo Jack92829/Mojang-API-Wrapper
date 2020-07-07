@@ -173,7 +173,7 @@
 ## Data Services
 **`class MojangAPI.DataService.Data()`**
     <p>
-        &ensp;&ensp;&ensp;Stores methods for getting information not related to Users  
+        &ensp;&ensp;&ensp;Stores methods for getting information not related to a specific User.    
         &ensp;&ensp;&ensp;All of its methods are *[class methods](https://www.programiz.com/python-programming/methods/built-in/classmethod "Mojang API")*
     </p>
     <p>
@@ -201,6 +201,12 @@
         <p>
             &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Returns a list of dictionaries containing the status of various Mojang services.  
             &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Possible values are `green` (no issues), `yellow` (some issues) and `red` (service unavailable).
+        </p>
+    </p>
+    <p>
+        &ensp;&ensp;&ensp;**`await getProfiles(*usernames)`**
+        <p>
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Returns a list of usernames and their corresponding UUID's.  
         </p>
     </p>
  
