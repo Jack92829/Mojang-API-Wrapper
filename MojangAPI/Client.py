@@ -155,7 +155,7 @@ class User(Auth):
 
         if package['properties']['textures'].get('CAPE'):
             profile.cape = package['properties']['textures']['CAPE']['url']
-        else: profile.skin = None
+        else: profile.cape = None
         
         profile.timestamp = package['properties']['timestamp']
         profile.raw = package
