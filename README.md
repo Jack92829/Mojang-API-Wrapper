@@ -1,6 +1,6 @@
 # Mojang-API-Wrapper
 ## Overview
-* Pythonic wrapper making use of `await` and `asnyc`
+* Pythonic wrapper making use of `await` and `async`
 * 100% Coverage of Mojang's API and Authentication API
 
 ## Installation
